@@ -1,7 +1,7 @@
 
 var db = null;
 
-angular.module('starter', ['ngCordova','ionic', 'starter.controllers', 'starter.services','crud'])
+angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers', 'starter.services','crud'])
 
 .run(function($ionicPlatform, $cordovaSQLite) {
   $ionicPlatform.ready(function() {
@@ -43,7 +43,7 @@ angular.module('starter', ['ngCordova','ionic', 'starter.controllers', 'starter.
     views: {
       'tab-dash': {
         templateUrl: 'templates/tab-dash.html',
-        controller: 'DashCtrl'
+        controller: 'create' // aqui eu digo qual controller eh responsavel pelo templete carregado
       }
     }
   })

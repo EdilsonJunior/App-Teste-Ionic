@@ -1,0 +1,43 @@
+manual
+
+Entra no github.com, cria novo repositorio.
+ele da uma lista de comandos p fazer na asta do projeto,
+
+voce faz esses passos que  gnte fez agora.. e agora seu codigo foi publicado no github.. vamos la
+
+o arguivo .gitignore tem a lista de pastas que nao seram publicadas..
+ essas pastas que nao sao publicadas, nao precisa, pq se eu rodar comando
+ de instalar depoendencias elas sao instaladas automatico.
+
+ agora é assim.. sempre que voce fizer uma alteraçao no codigo vc tem que fazer um commit.
+
+ comando: git status
+ desc: para saber se tem arquivos que ainda nao foram comitados ou enviados.
+
+ comando: git add .
+ desc: comando adiciona todos os arquivos
+
+ comando : git add nome_file
+ desc: adiciona apenas um arquivo
+
+ comando: git commit -m "Descricao da alteraçao ex.: Adicionado novo botao no menu x"
+ desc: Cria e inicia o versionamento dos arquivos, nesse ponto vc ja pode enviar para o site
+
+ commando: git push -u origin master
+ desc: envia arquivos alterados para o site.
+
+ Exemplo...
+
+ agora vai me mostrar que existe um arquivo que sofreu alteraçao ..
+ se der essa mensagem, roda o comando git add . novamente.
+
+[Android]
+Recomendo usar esse "Emulador": https://www.genymotion.com/#!/
+
+[Ionic]
+Recomendo teste local: ionic serve --lab
+
+
+
+Conecta um androd via usb, ativa modo programador, ativa depuraçao pela usb e roda
+comando: ionic run android

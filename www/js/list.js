@@ -6,19 +6,16 @@ angular.module('crud', [])
   
  
     $scope.add = function(){
-           
+
         var query = "INSERT INTO tabela(nome)VALUES ('"+$scope.nome+"');";
         $cordovaSQLite.execute(db, query).then(function(res) {
             console.log("insertId: " + res.insertId);
 
-              window.alert("Usuario cadastrado");
-             
+              alert("Usuario cadastrado");
+
               }, function (err) {
                   console.error(err);
               });
-
- window.alert("Usuario cadastrado");
-
 
  }
 
