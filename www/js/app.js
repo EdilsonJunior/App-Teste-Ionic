@@ -1,7 +1,7 @@
 
 var db = null;
 
-angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers', 'starter.services','crud'])
+angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers', 'starter.services','crud','github'])
 
 .run(function($ionicPlatform, $cordovaSQLite) {
   $ionicPlatform.ready(function() {
@@ -56,6 +56,16 @@ angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers', 'starter
         'tab-chats': {
           templateUrl: 'templates/tab-chats.html',
           controller: 'read.update.delete'
+        }
+      }
+    })
+
+  .state('tab.friends', {
+      url: '/friends',
+      views: {
+        'tab-friends': {
+          templateUrl: 'templates/tab-friends.html',
+          controller: 'usergit'
         }
       }
     });

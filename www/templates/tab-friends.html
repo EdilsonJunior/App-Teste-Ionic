@@ -1,22 +1,25 @@
-<ion-view view-title="Update">
+<ion-view view-title="UserGitHub">
  
      
       <ion-content class="padding">
-        <div class="list card">
-          <div class="item item-divider">Atualizar usuario encontrado</div>
-            <div class="item item-body">
-              <div  >
-                 <label>Atualizar nome nome:</label>
-                     <input type="text" ng-model="atualiza" placeholder="atualizar nome da Busca realizada">
-                     <hr>
-                     <div >
-                       <button ng-click="atualizar()" >Buscar</button>
-          
-                     </div>
-                    
-             </div>
-         </div>
-       </div>
+       
+
+       <div class="list card">
+      <div class="item item-divider">Usuario GitHub</div>
+      <div class="item item-body">
+       <div ng-controller="usergit" >
+      <label>Nome:</label>
+      <input type="text" ng-model="user" placeholder="Insira o nome do usuario">
+      <hr>
+    
+         <button   ng-click="userGitHub()" >Buscar</button>
+          <div>
+            <p>{{result}}</p>
+          </div>
+    </div>
+      </div>
+    </div>
+
     
   </ion-content>
 </ion-view>
