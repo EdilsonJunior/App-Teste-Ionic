@@ -41,16 +41,15 @@ angular.module('crud', [])
                 //mostrando usuario encontrado 
                 console.log("SELECTED -> " + res.rows.item(0).nome);
                 alert("encontrado : " + res.rows.item(0).nome);
-                $scope.flag = "true";
-                $scope.flagDel = "true";
-
+                $scope.flag = true;
+                $scope.flagDel = true;
+                $scope.atualiza= $scope.busca;
             } else {
                 //caso o usuario não tenha sido encontrado
                 console.log("Não encontrado");
                 alert($scope.busca+" não encontrado");
-                $scope.flag = "false";
-                $scope.flagDel = "false";
-            }
+                $scope.flag = false;
+                $scope.flagDel = false;            }
         }, function (err) {
             console.error(err);
                 alert("Erro");
