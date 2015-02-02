@@ -79,6 +79,10 @@ $scope.deletar = function(){
         $cordovaSQLite.execute(db, query,[$scope.busca]).then(function(res) {
                                 alert("Deletado com Sucesso");
                                 console.log(res);
+                                $scope.flag = false;
+                               $scope.flagDel = false; 
+                               $scope.busca = "";
+                               $scope.atualiza = "";
               }, function (err) {
                   console.error(err);
                   alert("Erro ao deletar");
